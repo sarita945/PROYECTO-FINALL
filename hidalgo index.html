@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ARIS SALÓN & SPA</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="hidalgo style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.jpeg" alt="Logo ARIS" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#sobre-nosotros">NOSOTROS</a></li>
+        <li><a href="#galeria">GALERÍA</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="#ubicacion">UBICACIÓN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CARRUSEL -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-6 p-0">
+            <img src="img/barberia aris.jpeg" alt="Imagen 1" />
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="text-section">
+              <h1>Tu cabello cobra vida en nuestras manos</h1>
+              <p>Salón de belleza y spa. Cuidamos tu imagen integral.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-6 p-0">
+            <img src="img/CORTE ARIS SALON.jpeg" alt="Imagen 2" />
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="text-section">
+              <h1>Estilo y confianza</h1>
+              <p>Resaltamos tu belleza natural con técnica y pasión.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre-nosotros">
+    <h2 class="titulo-sobre">Sobre Nosotros</h2>
+    <div class="contenido">
+      <div class="texto">
+        <p>"Transformamos tu imagen, realzamos tu belleza."</p>
+        <h3>MISIÓN</h3>
+        <p>Ofrecer servicios de belleza personalizados con excelencia y profesionalismo.</p>
+        <h3>VISIÓN</h3>
+        <p>Ser el salón líder en la región por calidad, innovación y cercanía con el cliente.</p>
+      </div>
+      <img src="img/fondo.jpg" alt="Sobre nosotros" />
+    </div>
+    <p class="compromiso">Nuestro compromiso es ofrecer tratamientos modernos, flexibles y de calidad con o sin cita previa. Medimos la satisfacción del cliente y evolucionamos con el mercado.</p>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-grid">
+      <div class="imagen-galeria">
+        <img src="img/cortes.jpg" alt="" />
+        <p class="titulo-img">Corte Degradados</p>
+      </div>
+      <div class="imagen-galeria">
+        <img src="img/lifting.jfif" alt="" />
+        <p class="titulo-img">Lifting</p>
+      </div>
+      <div class="imagen-galeria">
+        <img src="img/uñaas.webp" alt="" />
+        <p class="titulo-img">Manicure</p>
+      </div>
+      <div class="imagen-galeria">
+        <img src="img/tinte.jpg" alt="" />
+        <p class="titulo-img">Tintes</p>
+      </div>
+      <div class="imagen-galeria">
+        <img src="img/peinado.jpg" alt="" />
+        <p class="titulo-img">Peinados</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul class="lista-servicios">
+      <li onclick="mostrarConcepto(this)">Cortes de cabello<p class="concepto">Para hombres, mujeres y niños.</p></li>
+      <li onclick="mostrarConcepto(this)">Coloración<p class="concepto">Tintes, balayage, mechas, reflejos.</p></li>
+      <li onclick="mostrarConcepto(this)">Tratamientos capilares<p class="concepto">Keratina, hidratación, botox capilar.</p></li>
+      <li onclick="mostrarConcepto(this)">Peinados<p class="concepto">Para bodas, eventos y fotos.</p></li>
+      <li onclick="mostrarConcepto(this)">Maquillaje<p class="concepto">Para novias, eventos, sesiones.</p></li>
+      <li onclick="mostrarConcepto(this)">Tratamientos faciales<p class="concepto">Antiacné, hidratación, rejuvenecimiento.</p></li>
+    </ul>
+  </section>
+
+  <!-- EQUIPO -->
+  <section>
+    <center><h2>Nuestro Equipo</h2></center>
+    <div class="equipo">
+      <div class="persona">
+        <img src="img/naty.jpg" alt="" />
+        <h2>Mercedes Cuba</h2>
+        <p>Esteticista y estilista profesional.</p>
+      </div>
+      <div class="persona">
+        <img src="img/MAQUILLAJE.avif" alt="" />
+        <h2>Rosa Ramírez</h2>
+        <p>Especialista en maquillaje y color.</p>
+      </div>
+      <div class="persona">
+        <img src="img/naty manicurista.webp" alt="" />
+        <h2>Carmen Nieto</h2>
+        <p>Manicurista certificada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="contact-container">
+      <h2>Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+        <div class="botones-contacto">
+          <a href="https://api.whatsapp.com/send?phone=51956525741" target="_blank">
+            <img src="img/wtsp.jfif" alt="WhatsApp" class="icono-contacto" />
+          </a>
+          <a href="https://www.facebook.com/BazarYSalonDeBellezaArisJauja/" target="_blank">
+            <img src="img/facebok.png" alt="Facebook" class="icono-contacto" />
+          </a>
+          <a href="https://www.instagram.com/bazarysalondebellezaaris/" target="_blank">
+            <img src="img/instagra.jfif" alt="Facebook" class="icono-contacto" />
+          </a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <div class="mapa-container">
+      <iframe src="https://www.google.com/maps?q=Jirón+Bolivar+1148+Jauja&output=embed" allowfullscreen></iframe>
+    </div>
+    <div class="info">
+      <p><strong>Dirección:</strong> Jirón Junín #1132-1134 Jauja</p>
+      <p><strong>Teléfono:</strong> +51 956525741</p>
+      <p><strong>Email:</strong> marisoto.74@hotmail.com</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 ARIS | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Mostrar concepto -->
+  <script>
+    function mostrarConcepto(el) {
+      el.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
